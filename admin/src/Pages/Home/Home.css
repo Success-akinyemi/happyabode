@@ -1,0 +1,13 @@
+.home{
+    display: flex;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+.home .sidenav{
+    flex: 2;
+}
+
+.home .container{
+    flex: 10;
+}

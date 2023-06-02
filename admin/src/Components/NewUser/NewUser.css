@@ -1,0 +1,83 @@
+.newUser{
+    display: flex;
+}
+
+
+.newUser .left .content{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.newUser .left .content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newUser .left .content form .item{
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.newUser .left .content form .item label{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.newUser .left .content form .item input{
+    height: 30px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.newUser .left .content form button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background: orange;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newUser .left .content form button:hover{
+    transform: scale(0.95);
+}
+
+.newUser .right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.newUser .right .top{
+    margin-left: 300px;
+}
+
+.newUser .right .content h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.newUser .right .content .item{
+    margin-top: 20px;
+}
+
+.newUser .right .content .item h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.newUser .right .content .item span{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+}

@@ -1,0 +1,21 @@
+.sliderComponent{
+    margin-bottom: 30px;
+}
+
+.sliderComponent .label{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.sliderComponent .amount{
+    color: #fff;
+    font-size: 25px;
+}
+
+.sliderComponent .mark{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255,255,255,0.7);  
+}

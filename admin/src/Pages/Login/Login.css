@@ -1,0 +1,76 @@
+.login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login form{
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: -1px 0px 14px 2px rgba(0,0,0,0.50);
+    -webkit-box-shadow: -1px 0px 14px 2px rgba(0,0,0,0.50);
+    -moz-box-shadow: -1px 0px 14px 2px rgba(0,0,0,0.50);
+}
+
+.login form h2{
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-style: italic;
+    color: orange;
+}
+
+.login form .container .item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login form .item:first-child{
+    margin-bottom: 50px;
+}
+
+.login form .container .item label{
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.login form .container .item input{
+
+    width: 300px;
+    height: 20px;
+    font-size: 19px;
+    padding-left: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none
+}
+
+.login form button{
+    margin-bottom: auto;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background: orange;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.login form span{
+    color: orange;
+    font-weight: 600;
+}
