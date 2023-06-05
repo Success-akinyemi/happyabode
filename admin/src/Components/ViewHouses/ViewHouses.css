@@ -98,3 +98,19 @@
 .viewHouses .card .btn:hover{
     transform: scale(1.02);
 }
+
+@media screen and (max-width: 768px) {
+    .card{
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .card .cardContent{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card .cardContent img{
+        width: 100%;
+    }
+  }

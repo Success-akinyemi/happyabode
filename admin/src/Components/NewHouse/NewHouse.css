@@ -70,3 +70,10 @@
 .newHouse .content form button:hover{
     transform: scale(0.95);
 }
+
+@media screen and (max-width: 768px) {
+    .desc{
+        display: flex;
+        flex-direction: column;
+    }
+  }

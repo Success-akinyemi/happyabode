@@ -75,3 +75,12 @@
 .houseList .card .content .btn:hover{
     transform: scale(1.02);
 }
+
+@media screen and (max-width: 768px) {
+    .houseList{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

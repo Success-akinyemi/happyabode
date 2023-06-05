@@ -72,22 +72,22 @@ function EditHouse() {
           <form onSubmit={updateForm} >
             <div className='item'>
               <label>Title:</label>
-              <input type="text" name='title' value={title} onChange={(e) => setTitle(e.target.value)} placeholder={house.title} />
+              <input  type="text" name='title' value={title} onChange={(e) => setTitle(e.target.value)} placeholder={house.title} />
             </div>
 
             <div className='item'>
               <label>Price:</label>
-              <input type="number"  name='price' value={price} onChange={(e) => setPrice(e.target.value)}  placeholder={house.price} />
+              <input  type="number"  name='price' value={price} onChange={(e) => setPrice(e.target.value)}  placeholder={house.price} />
             </div>
 
             <div className='item'>
               <label>Address</label>
-              <input type="text" name='address' value={address} onChange={(e) => setAddress(e.target.value)} placeholder={house.address} />
+              <input  type="text" name='address' value={address} onChange={(e) => setAddress(e.target.value)} placeholder={house.address} />
             </div>
 
             <div className='item'>
               <label>Location: (Current Location:  {house.location})</label>
-              <select name="location" value={newLocation} onChange={(e) => setNewLocationValue(e.target.value)}>
+              <select  name="location" value={newLocation} onChange={(e) => setNewLocationValue(e.target.value)}>
               <option >Select State</option>
                 {State.map((item, idx) => (
                   <option key={idx} value={item.value}>
@@ -99,7 +99,7 @@ function EditHouse() {
 
             <div className='item'>
               <label htmlFor='img'>Main Image:</label>
-              <input type="file"  name='img' value={img} onChange={(e) => setImg(e.target.value)} accept='image/jpeg image/png' style={{border: 'none'}}/>
+              <input  type="file"  name='img' value={img} onChange={(e) => setImg(e.target.value)} accept='image/jpeg image/png' style={{border: 'none'}}/>
             </div>
 
             <div className='item'>
@@ -107,9 +107,9 @@ function EditHouse() {
               <input type="file"  multiple name='imgArray' value={imgArray} onChange={(e) => setImgArray(e.target.value)} accept='image/jpeg image/png' style={{border: 'none'}}/>
             </div>
 
-            <div className='item'>
+            <div className='item desc'>
               <label>Description:</label>
-              <textarea type="text" name='desc' value={desc} onChange={(e) => setDesc(e.target.value)} placeholder={house.desc} rows='1' cols='1' ></textarea>
+              <textarea  type="text" name='desc' value={desc} onChange={(e) => setDesc(e.target.value)} placeholder={house.desc} rows='1' cols='1' ></textarea>
             </div>
 
             <button>Edit House</button>

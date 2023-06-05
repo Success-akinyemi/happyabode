@@ -124,22 +124,22 @@ function validateImg(e) {
           <form onSubmit={submitNewHouse} >
             <div className='item'>
               <label>Title:</label>
-              <input type="text" name='title' value={title} onChange={(e) => setTitle(e.target.value)} placeholder='house title' />
+              <input required type="text" name='title' value={title} onChange={(e) => setTitle(e.target.value)} placeholder='house title' />
             </div>
 
             <div className='item'>
               <label>Price:</label>
-              <input type="number"  name='price' value={price} onChange={(e) => setPrice(e.target.value)}  placeholder='house price' />
+              <input required type="number"  name='price' value={price} onChange={(e) => setPrice(e.target.value)}  placeholder='house price' />
             </div>
 
             <div className='item'>
               <label>Address</label>
-              <input type="text" name='address' value={address} onChange={(e) => setAddress(e.target.value)} placeholder='house address' />
+              <input required type="text" name='address' value={address} onChange={(e) => setAddress(e.target.value)} placeholder='house address' />
             </div>
 
             <div className='item'>
               <label>Location: (State)</label>
-              <select name="location" value={newLocation} onChange={(e) => setNewLocationValue(e.target.value)}>
+              <select required name="location" value={newLocation} onChange={(e) => setNewLocationValue(e.target.value)}>
               <option >Select State</option>
                 {State.map((item, idx) => (
                   <option key={idx} value={item.value}>
@@ -151,7 +151,7 @@ function validateImg(e) {
 
             <div className='item'>
               <label htmlFor='img'>Main Image:</label>
-              <input type="file"  name='img'  onChange={validateImg} accept='image/jpeg image/png' style={{border: 'none'}}/>
+              <input required type="file"  name='img'  onChange={validateImg} accept='image/jpeg image/png' style={{border: 'none'}}/>
             </div>
 
             <div className='item'>
@@ -159,9 +159,9 @@ function validateImg(e) {
               <input type="file"  multiple name='imgArray' onChange={validateImg} accept='image/jpeg image/png' style={{border: 'none'}}/>
             </div>
 
-            <div className='item'>
+            <div className='item desc'>
               <label>Description:</label>
-              <textarea type="text" name='desc' value={desc} onChange={(e) => setDesc(e.target.value)} placeholder='house description' rows='1' cols='1' ></textarea>
+              <textarea required type="text" name='desc' value={desc} onChange={(e) => setDesc(e.target.value)} placeholder='house description' rows='1' cols='1' ></textarea>
             </div>
 
             <button>{uploadingImg ? 'Please Wait' : 'Add New House'}</button>

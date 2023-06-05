@@ -91,3 +91,19 @@
     width: 300px;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .editHouse{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .desc{
+        flex-direction: column;
+    }
+
+    .editHouse .right .top{
+        margin-left: 0px;
+    }
+  }
