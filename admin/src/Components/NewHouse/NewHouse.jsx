@@ -44,22 +44,18 @@ function validateImg(e) {
     data.append('file', img);
     data.append('upload_preset', 'wtqdxw06');
 
-    try {
-      const urlData = await toast.promise(
-        fetch('https://api.cloudinary.com/v1_1/dsjwuwjm1/image/upload', {
-          method: 'post',
-          body: data,
-        }),
-        {
-          loading: 'Please Wait...',
-          success: 'Image Uploaded Successfully',
-          error: 'Failed to Upload Image',
-        }
-      );
-  
-      return urlData.url;
-    } catch (err) {
-      console.log(err);
+    try{
+      setUploadingImg(true);
+      let res = await fetch('https://api.cloudinary.com/v1_1/dsjwuwjm1/image/upload', {
+        method: 'post',
+        body: data
+      })
+      const urlData = await res.json();
+      setUploadingImg(false);
+      return urlData.url
+    }catch(err){
+      setUploadingImg(false)
+      console.log(err)
     }
   }
 
